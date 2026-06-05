@@ -34,4 +34,9 @@ jobs:
           plugin_languages_sections: most-used
           plugin_languages_details: percentage, lines
           
+          # PLUGIN: Exibe ícones das tecnologias que você domina baseadas nos seus repositórios
+          plugin_topics: yes
+          plugin_topics_limit: 15
+          plugin_topics_mode: icons # Transforma as tags em ícones visuais limpos
+          
         
