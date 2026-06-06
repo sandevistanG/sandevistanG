@@ -1,27 +1,19 @@
-
 name: Metrics
-
 on:
   schedule:
     - cron: "0 0 * * *"
-
   workflow_dispatch:
-
   push:
     branches:
       - master
       - main
-
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
-
     environment:
       name: production
-
     permissions:
       contents: write
-
     steps:
     - name: Icons
       uses: lowlighter/metrics@latest
@@ -35,4 +27,15 @@ jobs:
         plugin_topics_mode: icons
         output_action: commit
         output_path: github-metrics.svg
-        
+
+    - name: Isocalendar (3D commits)
+      uses: lowlighter/metrics@latest
+      with:
+        user: sandevistanG
+        filename: metrics.plugin.isocalendar.svg
+        token: ${{ secrets.METRICS_TOKEN }}
+        base: ""
+        plugin_isocalendar: yes
+        plugin_isocalendar_duration: full-year
+        output_action: commit
+        output_path: metrics.plugin.isocalendar.svg
