@@ -2,15 +2,15 @@
 <table>
   <tr>
     <td>
-      <img src="./github-metrics.svg" alt="Metrics"/>
+      <img src="./github-metrics.svg" width="100%" alt="Metrics"/>
     </td>
     <td>
-      <img src="./metrics.plugin.isocalendar.svg" alt="Isocalendar"/>
+      <img src="./metrics.plugin.isocalendar.svg" width="80%" alt="Isocalendar"/>
     </td>
   </tr>
   <tr>
     <td>
-      <img src="./ippo.jpeg" alt="Ippo"/>
+      <img src="./ippo.jpeg" width="500" alt="Ippo"/>
     </td>
     <td>
       <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
